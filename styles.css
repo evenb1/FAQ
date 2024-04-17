@@ -45,3 +45,6 @@ body{
     transition: .5s;
 
 }
+.accordion .content-container.active .answer{
+    
+}
