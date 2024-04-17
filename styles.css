@@ -55,4 +55,5 @@ body{
 }
 .accordion .content-container.active .question::after{
     content: "-";
+    font-size: 30px;
 }
