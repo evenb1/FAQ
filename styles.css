@@ -46,5 +46,5 @@ body{
 
 }
 .accordion .content-container.active .answer{
-
+    height: 150px;
 }
