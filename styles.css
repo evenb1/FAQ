@@ -53,3 +53,5 @@ body{
     font-size: 18px;
     transition: .5s;
 }
+.accordion .content-container.active .question::after{
+}
