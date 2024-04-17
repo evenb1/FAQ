@@ -54,4 +54,5 @@ body{
     transition: .5s;
 }
 .accordion .content-container.active .question::after{
+    content: "-";
 }
