@@ -1,16 +1,17 @@
-*{
-font-family: sans-serif;
+* {
+    font-family: sans-serif;
 }
-body{
+
+body {
     background: url('faq.avif') no-repeat center;
     background-position: top;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.accordion{
+
+.accordion {
     border: 2px solid black;
     background-color: #262626;
     color: white;
@@ -18,42 +19,40 @@ body{
     width: 500px;
     padding: 40px;
     margin-top: 304px;
-    
-    
-
 }
-.accordion .content-container .question{
+
+.accordion .content-container .question {
     padding: 18px 0;
     font-size: 22px;
     cursor: pointer;
     border-bottom: 1px solid white;
     position: relative;
-
-
 }
-.accordion .content-container .question::after{
+
+.accordion .content-container .question::after {
     content: "+";
     position: absolute;
     right: -5px;
 }
-.accordion .content-container .answer{
+
+.accordion .content-container .answer {
     padding-top: 15px;
     line-height: 1.5;
-    width:100%;
-    height: 0px;
+    max-height: 0;
     overflow: hidden;
-    transition: .5s;
-
+    transition: max-height 0.5s;
 }
-.accordion .content-container.active .answer{
-    height: 150px;
 
+.accordion .content-container.active .answer {
+    max-height: 150px;
 }
-.accordion .content-container.active .question{
+
+.accordion .content-container.active .question {
     font-size: 18px;
     transition: .5s;
 }
-.accordion .content-container.active .question::after{
+
+.accordion .content-container.active .question::after {
     content: "-";
     font-size: 30px;
     transition: .5s;
